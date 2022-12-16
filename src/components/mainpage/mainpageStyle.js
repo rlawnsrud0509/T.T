@@ -9,8 +9,24 @@ export const container = styled.div`
   flex-direction: column;
 `;
 
+const shownav = keyframes`
+    0% {
+        width: 0%;
+        opacity: 0;
+    }
+    25% {
+        width: 37.5%;
+        opacity: 0;
+    }
+    100% {
+        width: 100%;
+        opacity: 1;
+    }
+`;
+
 export const navbar = styled.div`
   position: fixed;
+  display: flex;
   background-color: white;
   height: 75px;
   width: 100%;
@@ -18,29 +34,38 @@ export const navbar = styled.div`
   font-weight: 600;
   color: black;
   text-shadow: 5px 5px 0px black;
+  animation: ${shownav} 1s ease-out;
+`;
+
+export const navbarElement = styled.div`
+  color: black;
+  display: flex;
+  font-size: 25px;
+  font-weight: bold;
+  width: 150px;
+  height: 100%;
+  transition-timing-function: ease-out;
+  transition-duration: 0.15s;
+  text-shadow: none;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  :hover {
+    transition-duration: 0.25s;
+    text-shadow: 0px 0px 5px gray;
+    font-size: 26px;
+    cursor: pointer;
+  }
 `;
 
 const showtext = keyframes`
     0% {
-        margin-top: 0rem;
+        margin-top: 2rem;
         opacity: 0;
     }
-    2.5% {
+    50% {
+        opacity: 0;
         margin-top: 3.5rem;
-        opacity: 0.1;
-    }
-    20% {
-        margin-top: 1.5rem;
-        opacity: 0.2;
-        transition-timing-function: ease-out;
-    }
-    22.5% {
-        margin-top: 5rem;
-        opacity: 0.35;
-    }
-    40% {
-        margin-top: 3.5rem;
-        opacity: 0.5;
     }
     100% {
         margin-top: 5rem;
@@ -57,6 +82,7 @@ export const mainText = styled.div`
   font-weight: 600;
   margin-left: 20px;
   margin-top: 3rem;
-  animation: ${showtext} 2.5s;
+  opacity: 0;
+  animation: ${showtext} 1.5s ease-out 1s;
   animation-fill-mode: forwards;
 `;
