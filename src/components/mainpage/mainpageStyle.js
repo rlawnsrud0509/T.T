@@ -4,7 +4,7 @@ import { keyframes } from "styled-components";
 export const container = styled.div`
   width: 100vw;
   height: 100vh;
-  background-color: skyblue;
+  background-color: rgb(205, 255, 255);
   display: flex;
   flex-direction: column;
 `;
