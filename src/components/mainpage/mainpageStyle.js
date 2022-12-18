@@ -15,7 +15,7 @@ const shownav = keyframes`
         opacity: 0;
     }
     25% {
-        width: 37.5%;
+        width: 35%;
         opacity: 0;
     }
     100% {
