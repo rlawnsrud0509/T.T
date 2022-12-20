@@ -31,7 +31,6 @@ export const navbar = styled.div`
   height: 75px;
   width: 100%;
   font-size: 30px;
-  font-weight: 600;
   color: black;
   text-shadow: 5px 5px 0px black;
   animation: ${shownav} 1s ease-out;
@@ -41,7 +40,6 @@ export const navbarElement = styled.div`
   color: black;
   display: flex;
   font-size: 25px;
-  font-weight: bold;
   width: 150px;
   height: 100%;
   transition-timing-function: ease-out;
@@ -52,9 +50,9 @@ export const navbarElement = styled.div`
   margin-left: 2rem;
   :hover {
     transition-duration: 0.25s;
-    text-shadow: 0px 0px 5px gray;
-    font-size: 26px;
-    cursor: pointer;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: default;
   }
 `;
 
