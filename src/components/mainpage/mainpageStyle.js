@@ -47,7 +47,7 @@ export const navbarElement = styled.div`
   text-shadow: none;
   justify-content: center;
   align-items: center;
-  margin-left: 2rem;
+  margin-left: 2.1rem;
   :hover {
     transition-duration: 0.25s;
     font-size: 30px;
